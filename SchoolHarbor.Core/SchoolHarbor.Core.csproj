@@ -6,4 +6,16 @@
         <Nullable>enable</Nullable>
     </PropertyGroup>
 
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <PackageId>SchoolHarbor.Core</PackageId>
+        <Version>1.0.0</Version>
+        <Authors>SchoolHarbor</Authors>
+        <Company>SchoolHarbor</Company>
+        <PackageDescription>Core functions for all School Harbor projects to share.</PackageDescription>
+        <RepositoryUrl>https://github.com/SchoolHarbor/SchoolHarbor.Core</RepositoryUrl>
+    </PropertyGroup>
+
 </Project>

@@ -18,4 +18,8 @@
         <RepositoryUrl>https://github.com/SchoolHarbor/SchoolHarbor.Core</RepositoryUrl>
     </PropertyGroup>
 
+    <ItemGroup>
+      <Content Include=".github\workflows\deploy-nuget.yml" />
+    </ItemGroup>
+
 </Project>

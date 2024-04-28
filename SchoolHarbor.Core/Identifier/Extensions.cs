@@ -17,4 +17,16 @@ public static class Extensions
         return referenceId.Kind == ReferenceIdKind.Database &&
                referenceId.SourceKind == ReferenceIdSourceKind.SchoolHarbor;
     }
+
+    public static SchoolHarborDbId ToSchoolHarborDbId(this IReferenceId referenceId)
+    {
+        if (referenceId.IsSchoolHarborDbId() &&
+            int.TryParse(referenceId.Value, out var dbId))
+        {
+            return new SchoolHarborDbId(dbId);
+        }
+        
+        throw new InvalidDataException(
+            $"ReferenceId is not valid School Harbor DB Id. Value: {referenceId.Value} Kind: {referenceId.Kind} Source {referenceId.SourceKind}");
+    }
 }

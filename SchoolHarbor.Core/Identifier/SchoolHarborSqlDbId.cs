@@ -1,11 +1,11 @@
 namespace SchoolHarbor.Core.Identifier;
 
-public class SchoolHarborDbId : IReferenceId
+public class SchoolHarborSqlDbId : IReferenceId
 {
-    public SchoolHarborDbId(int schoolHarborDbId)
+    public SchoolHarborSqlDbId(int schoolHarborSqlDbId)
     {
-        NumericDbId = schoolHarborDbId;
-        Value = schoolHarborDbId.ToString();
+        NumericSqlDbId = schoolHarborSqlDbId;
+        Value = schoolHarborSqlDbId.ToString();
     }
 
     public ReferenceIdKind Kind => ReferenceIdKind.Database;
@@ -14,5 +14,5 @@ public class SchoolHarborDbId : IReferenceId
     
     public string Value { get; }
 
-    public int NumericDbId { get; }
+    public int NumericSqlDbId { get; }
 }

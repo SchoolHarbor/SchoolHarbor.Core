@@ -18,12 +18,12 @@ public static class Extensions
                referenceId.SourceKind == ReferenceIdSourceKind.SchoolHarborSql;
     }
 
-    public static SchoolHarborDbId ToSchoolHarborDbId(this IReferenceId referenceId)
+    public static SchoolHarborSqlDbId ToSchoolHarborDbId(this IReferenceId referenceId)
     {
         if (referenceId.IsSchoolHarborDbId() &&
             int.TryParse(referenceId.Value, out var dbId))
         {
-            return new SchoolHarborDbId(dbId);
+            return new SchoolHarborSqlDbId(dbId);
         }
         
         throw new InvalidDataException(

@@ -10,7 +10,7 @@ public class SchoolHarborMongoDbId : IReferenceId
 
     public ReferenceIdKind Kind => ReferenceIdKind.Database;
 
-    public ReferenceIdSourceKind SourceKind => ReferenceIdSourceKind.SchoolHarborSql;
+    public ReferenceIdSourceKind SourceKind => ReferenceIdSourceKind.SchoolHarborCosmos;
 
     public string Value { get; }
 

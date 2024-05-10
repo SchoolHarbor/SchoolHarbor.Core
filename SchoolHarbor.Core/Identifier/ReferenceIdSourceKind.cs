@@ -4,7 +4,7 @@ public enum ReferenceIdSourceKind
 {
     Unknown = 0,
     
-    SchoolHarbor,
+    SchoolHarborSql,
     
     PowerSchool,
     
@@ -16,5 +16,7 @@ public enum ReferenceIdSourceKind
     
     GoogleAdmin,
     
-    GoogleClassroom
+    GoogleClassroom,
+    
+    SchoolHarborCosmos
 }

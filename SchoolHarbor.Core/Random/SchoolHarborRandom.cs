@@ -36,7 +36,7 @@ namespace SchoolHarbor.Core.Random;
 
         public static ReferenceId ReferenceId() => new ReferenceId(
             ReferenceIdKind.Database,
-            ReferenceIdSourceKind.SchoolHarbor, 
+            ReferenceIdSourceKind.SchoolHarborSql, 
             SchoolHarborRandom.Int().ToString());
 
         public static DateTime Date()

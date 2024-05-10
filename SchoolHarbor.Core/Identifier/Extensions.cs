@@ -15,7 +15,7 @@ public static class Extensions
     public static bool IsSchoolHarborDbId(this IReferenceId referenceId)
     {
         return referenceId.Kind == ReferenceIdKind.Database &&
-               referenceId.SourceKind == ReferenceIdSourceKind.SchoolHarbor;
+               referenceId.SourceKind == ReferenceIdSourceKind.SchoolHarborSql;
     }
 
     public static SchoolHarborDbId ToSchoolHarborDbId(this IReferenceId referenceId)

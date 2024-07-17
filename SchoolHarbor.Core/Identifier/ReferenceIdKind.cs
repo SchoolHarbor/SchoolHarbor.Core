@@ -14,5 +14,7 @@ public enum ReferenceIdKind
     
     Hr,
     
-    Government
+    Government,
+    
+    Payment
 }

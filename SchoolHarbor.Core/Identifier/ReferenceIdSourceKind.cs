@@ -18,5 +18,7 @@ public enum ReferenceIdSourceKind
     
     GoogleClassroom,
     
-    SchoolHarborCosmos
+    SchoolHarborCosmos,
+    
+    Stripe
 }

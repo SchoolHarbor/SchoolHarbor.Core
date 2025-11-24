@@ -20,5 +20,7 @@ public enum ReferenceIdSourceKind
     
     SchoolHarborCosmos,
     
-    Stripe
+    Stripe,
+    
+    CsiReport
 }

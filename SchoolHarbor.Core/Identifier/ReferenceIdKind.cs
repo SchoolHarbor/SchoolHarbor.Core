@@ -16,5 +16,7 @@ public enum ReferenceIdKind
     
     Government,
     
-    Payment
+    Payment,
+    
+    CsiProvidedStudentSis
 }
